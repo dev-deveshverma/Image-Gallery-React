@@ -15,8 +15,8 @@ export const ImagesGallery = ({all_data}) => {
       if (!shouldCancel && response && response.length > 0) {
         setImages(
           response.map((data)=> ({
-            original:data.urls.raw,
-            thumbnail:data.urls.raw
+            original:data.urls.full,
+            thumbnail:data.urls.full
           }))
         );
       }
